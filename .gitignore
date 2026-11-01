@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Dataset images
+images/
+
+# Model weights
+weights/
+*.pt
+*.onnx
+
+# Ground truth and generated results
+ground_truth.csv
+output/
+database/
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
