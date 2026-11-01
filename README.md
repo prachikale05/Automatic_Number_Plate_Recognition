@@ -62,40 +62,6 @@ flowchart TD
     F --> I
 ```
 
-```text
-Input Vehicle Image
-        |
-        v
-   YOLO Plate Detection
-        |
-        v
-  Multi-stage Detection
-        |
-        v
-  Plate Cropping & Padding
-        |
-        v
-   Image Enhancement
-        |
-        v
-  PaddleOCR Recognition
-        |
-        v
-  Row-wise Text Joining
-        |
-        v
- Indian Plate Format Correction
-        |
-        v
-    OCR Candidate Voting
-        |
-        v
-  Recognized Plate Number
-        |
-        v
-      CSV Output
-```
-
 ### Processing stages
 
 1. **Plate Detection:** The custom YOLO model detects number plates. If the initial detection does not find a suitable candidate, the system attempts higher-resolution detection, vehicle-region detection and overlapping image tiles.
